@@ -1,0 +1,23 @@
+:root
+{
+    --font-principal: 'Inter', sans-serif;
+    --color-primary: #2658e4;
+    --columns-card: repeat(5,1fr);
+    --rows-card: repeat(8,1fr);
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+    padding: 30px 0;
+    font-family: var(--font-principal);
+    font-size: 1.6rem;
+}

@@ -1,0 +1,58 @@
+:root {
+  --font-principal: "Inter", sans-serif;
+  --color-primary: #2658e4;
+  --columns-card: repeat(5,1fr);
+  --rows-card: repeat(8,1fr);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+  padding: 30px 0;
+  font-family: var(--font-principal);
+  font-size: 1.6rem;
+}
+
+.card {
+  display: grid;
+  grid: var(--rows-card)/var(--columns-card);
+  max-inline-size: 1000px;
+  inline-size: 90%;
+}
+.card::after {
+  grid-area: 1/1/-1/4;
+  background-image: url("../img.jpg");
+  background-size: cover;
+  background-position: top center;
+  content: "";
+}
+.card__content {
+  z-index: 1;
+  grid-area: 2/3/-2/-1;
+  padding: 30px;
+  color: white;
+  background-color: var(--color-primary);
+}
+.card__title {
+  margin-block-end: 20px;
+  font-size: 3.2rem;
+}
+.card__description {
+  margin-block-end: 20px;
+  line-height: 1.5;
+}
+.card__cta {
+  display: inline-block;
+  padding: 18px 45px;
+  background-color: white;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

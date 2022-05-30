@@ -1,0 +1,41 @@
+.card
+{
+    display: grid;
+    grid: var(--rows-card)/var(--columns-card);
+    max-inline-size: 1000px;
+    inline-size: 90%;
+    &::after
+    {
+        grid-area: 1/1/-1/4;
+        background-image: url('../img.jpg');
+        background-size: cover;
+        background-position: top center;
+        content: "";
+    }
+    &__content
+    {
+        z-index: 1;
+        grid-area: 2/3/-2/-1;
+        padding: 30px;
+        color: white;
+        background-color: var(--color-primary);
+    }
+    &__title
+    {
+        margin-block-end: 20px;
+        font-size: 3.2rem;
+    }
+    &__description
+    {
+        margin-block-end: 20px;
+        line-height: 1.5;
+    }
+    &__cta
+    {
+        display: inline-block;
+        padding: 18px 45px;
+        background-color: white;
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+}
