@@ -10,3 +10,5 @@ The following repository is a practice in wich we make a cars of some topic, whe
 * z-index
 
 [figma card design](https://www.figma.com/file/Qr39ZkJtLsjGhZ95CVlnsw/Untitled?node-id=0%3A1)
+
+**El diseño y las propiedades de CSS son del curso de Jordan Alexander**
