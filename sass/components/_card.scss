@@ -11,6 +11,15 @@
         background-size: cover;
         background-position: top center;
         content: "";
+        @include tablets
+        {
+            grid-column: 1/-2;
+        }
+        @include smartphone
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
     &__content
     {
@@ -19,6 +28,15 @@
         padding: 30px;
         color: white;
         background-color: var(--color-primary);
+        @include tablets
+        {
+            grid-column-start: 2 ;
+        }
+        @include smartphone
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
     &__title
     {

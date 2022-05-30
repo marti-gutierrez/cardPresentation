@@ -1,9 +1,29 @@
+@mixin tablets
+{
+    @media screen and (max-width: 768px)
+    {
+        @content;
+    }
+}
+@mixin smartphone
+{
+    @media screen and (max-width: 425px)
+    {
+        @content;
+    }
+}
+
 :root
 {
     --font-principal: 'Inter', sans-serif;
     --color-primary: #2658e4;
     --columns-card: repeat(5,1fr);
     --rows-card: repeat(8,1fr);
+    @include smartphone
+    {
+        --columns-card: 1fr;
+        --rows-card: 1fr 1fr
+    }
 }
 
 html
