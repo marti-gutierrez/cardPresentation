@@ -1,0 +1,30 @@
+{
+  "name": "cardpresentation",
+  "version": "1.0.0",
+  "description": "carta de presentacion que ocupa css GRO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martingh19/cardPresentation.git"
+  },
+  "keywords": [
+    "grid",
+    "css"
+  ],
+  "author": "Martin Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martingh19/cardPresentation/issues"
+  },
+  "homepage": "https://github.com/martingh19/cardPresentation#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
