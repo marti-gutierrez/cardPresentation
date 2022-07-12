@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass -w src/sass:public/css"
+    "sass": "sass -w src/sass:public/css",
+    "tailwind": "tailwindcss -i ./src/css/main.css -o ./public/css/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,10 @@
   },
   "homepage": "https://github.com/martingh19/cardPresentation#readme",
   "devDependencies": {
-    "sass": "^1.52.1"
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.1",
+    "tailwindcss": "^3.1.6"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

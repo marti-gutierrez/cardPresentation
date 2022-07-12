@@ -54,7 +54,6 @@ body {
   grid-area: 2/3/-2/-1;
   padding: 30px;
   color: white;
-  background-color: var(--color-primary);
 }
 @media screen and (max-width: 768px) {
   .card__content {
@@ -78,7 +77,6 @@ body {
 .card__cta {
   display: inline-block;
   padding: 18px 45px;
-  background-color: white;
   color: var(--color-primary);
   text-decoration: none;
 }

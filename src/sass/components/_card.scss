@@ -27,7 +27,7 @@
         grid-area: 2/3/-2/-1;
         padding: 30px;
         color: white;
-        background-color: var(--color-primary);
+        // background-color: var(--color-primary);
         @include tablets
         {
             grid-column-start: 2 ;
@@ -52,7 +52,7 @@
     {
         display: inline-block;
         padding: 18px 45px;
-        background-color: white;
+        // background-color: white;
         color: var(--color-primary);
         text-decoration: none;
     }
