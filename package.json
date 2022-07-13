@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "carta de presentacion que ocupa css GRO",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass -w src/sass:public/css",

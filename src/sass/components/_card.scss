@@ -4,13 +4,12 @@
     grid: var(--rows-card)/var(--columns-card);
     max-inline-size: 1000px;
     inline-size: 90%;
-    &::after
+    &__background
     {
         grid-area: 1/1/-1/4;
-        background-image: url('../../src/assets/img.jpg');
-        background-size: cover;
-        background-position: top center;
-        content: "";
+        inline-size: 100%;
+        max-block-size: 420px;
+        object-fit: cover;
         @include tablets
         {
             grid-column: 1/-2;

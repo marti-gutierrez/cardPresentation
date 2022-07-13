@@ -31,20 +31,19 @@ body {
   max-inline-size: 1000px;
   inline-size: 90%;
 }
-.card::after {
+.card__background {
   grid-area: 1/1/-1/4;
-  background-image: url("../../src/assets/img.jpg");
-  background-size: cover;
-  background-position: top center;
-  content: "";
+  inline-size: 100%;
+  max-block-size: 420px;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-  .card::after {
+  .card__background {
     grid-column: 1/-2;
   }
 }
 @media screen and (max-width: 425px) {
-  .card::after {
+  .card__background {
     grid-column: span 1;
     grid-row: span 1;
   }
