@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card presentation</title>
     <!-- <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!--link rel="stylesheet" href="./css/index.css"-->
     <link rel="stylesheet" href="./css/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <section class="card">
-        <div class="card__content bg-blue-600">
-            <h2 class="card__title">Aprende CSS3 como un hechicero</h2>
-            <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, illo voluptates nulla magni odio saepe eius eum, rem labore fugiat deleniti eveniet officiis magnam dolor minus amet aspernatur! Delectus magni ea facere? Cupiditate, illo.</p>
-            <a href="#" class="card__cta bg-white">Entra ahora</a>
+<body class="flex justify-center items-center min-h-screen px-0 py-8">
+    <section class="grid grid-cols-5 grid-rows-8 w-11/12 max-w-5xl">
+        <div class="col-start-3 col-end-6 row-start-2 row-end-8 z-10 bg-blue-400 p-8">
+            <h2 class="mb-5 text-4xl">Aprende CSS3 como un hechicero</h2>
+            <p class="mb-5 leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, illo voluptates nulla magni odio saepe eius eum, rem labore fugiat deleniti eveniet officiis magnam dolor minus amet aspernatur! Delectus magni ea facere? Cupiditate, illo.</p>
+            <a href="#" class="inline-block bg-white py-5 px-11 text-blue-600">Entra ahora</a>
         </div>
-        <img src="" alt="imagen de personas hablando" class="card__background">
+        <img src="" alt="imagen de personas hablando" class="card__background row-span-full col-start-1 col-end-4 w-full max-h-[420px] object-cover">
     </section>
     <script src="../src/main.js"></script>
 </body>

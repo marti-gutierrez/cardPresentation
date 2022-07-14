@@ -17,6 +17,6 @@ const fetchData = urlApi => fetch(urlApi);
 
 fetchData(`${API.url}?key=${API.api_key}&q=${API.qP.q[0]}+${API.qP.q[1]}&image_type=${API.qP.image_type}&per_page=3&pretty`)
     .then(answer => answer.json())
-    .then(images => images.hits[2].largeImageURL)
+    .then(images => images.hits[0].largeImageURL)
     .then(img => imgNode.src = img)
     .catch(error => console.error(error));
